@@ -63,7 +63,7 @@ To convert the tests to JUnit XML:
 import junit_xml
 
 with open("test_results.xml", "w") as out_file:
-    junit_xml.TestSuite.to_file(out_file, [results.to_junit()])
+    junit_xml.to_xml_report_file(out_file, [results.to_junit()])
 ```
 
 ### Test Results Format

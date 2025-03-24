@@ -23,7 +23,7 @@ class TestJUnitOutput(unittest.TestCase):
             results = unity_test_parser.TestResults(output_file.read(), unity_test_parser.UNITY_BASIC)
         
         out_string = io.StringIO()
-        junit_xml.TestSuite.to_file(out_string, [results.to_junit()])
+        junit_xml.to_xml_report_file(out_string, [results.to_junit()])
         verify(out_string.getvalue(), self.reporter)
 
     def test_junit_from_unity_fixture(self):
@@ -32,5 +32,5 @@ class TestJUnitOutput(unittest.TestCase):
             results = unity_test_parser.TestResults(output_file.read(), unity_test_parser.UNITY_FIXTURE_VERBOSE)
         
         out_string = io.StringIO()
-        junit_xml.TestSuite.to_file(out_string, [results.to_junit()])
+        junit_xml.to_xml_report_file(out_string, [results.to_junit()])
         verify(out_string.getvalue(), self.reporter)
