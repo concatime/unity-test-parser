@@ -1,49 +1,49 @@
 <?xml version="1.0" ?>
 <testsuites disabled="0" errors="0" failures="13" tests="17" time="0.0">
-	<testsuite disabled="0" errors="0" failures="13" name="all_tests" package="all_tests" skipped="1" tests="17" time="0">
-		<testcase classname="default" name="test_pass_1"/>
-		<testcase classname="default" name="test_pass_2"/>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="43" name="basic_fail">
+	<testsuite disabled="0" errors="0" failures="13" name="all_tests" skipped="1" tests="17" time="0" package="all_tests">
+		<testcase name="test_pass_1" classname="default"/>
+		<testcase name="test_pass_2" classname="default"/>
+		<testcase name="basic_fail" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="43">
 			<failure type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:43:basic_fail:FAIL</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="44" name="ignore">
+		<testcase name="ignore" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="44">
 			<skipped type="skipped">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:44:ignore:IGNORE</skipped>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="45" name="basic_assert_fail">
-			<failure message="Expression Evaluated To FALSE" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:45:basic_assert_fail:FAIL: Expression Evaluated To FALSE</failure>
+		<testcase name="basic_assert_fail" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="45">
+			<failure type="failure" message="Expression Evaluated To FALSE">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:45:basic_assert_fail:FAIL: Expression Evaluated To FALSE</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="46" name="boolean_fail">
-			<failure message="Expected TRUE Was FALSE" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:46:boolean_fail:FAIL: Expected TRUE Was FALSE</failure>
+		<testcase name="boolean_fail" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="46">
+			<failure type="failure" message="Expected TRUE Was FALSE">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:46:boolean_fail:FAIL: Expected TRUE Was FALSE</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="47" name="equal_int">
-			<failure message="Expected 1 Was 2" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:47:equal_int:FAIL: Expected 1 Was 2</failure>
+		<testcase name="equal_int" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="47">
+			<failure type="failure" message="Expected 1 Was 2">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:47:equal_int:FAIL: Expected 1 Was 2</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="48" name="equal_uint8">
-			<failure message="Expected 128 Was 255" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:48:equal_uint8:FAIL: Expected 128 Was 255</failure>
+		<testcase name="equal_uint8" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="48">
+			<failure type="failure" message="Expected 128 Was 255">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:48:equal_uint8:FAIL: Expected 128 Was 255</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="49" name="less_than_int">
-			<failure message="Expected 2 to be less than 1" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:49:less_than_int:FAIL: Expected 2 to be less than 1</failure>
+		<testcase name="less_than_int" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="49">
+			<failure type="failure" message="Expected 2 to be less than 1">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:49:less_than_int:FAIL: Expected 2 to be less than 1</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="50" name="equal_string">
-			<failure message="Expected 'yes' Was 'no'" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:50:equal_string:FAIL: Expected 'yes' Was 'no'</failure>
+		<testcase name="equal_string" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="50">
+			<failure type="failure" message="Expected 'yes' Was 'no'">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:50:equal_string:FAIL: Expected 'yes' Was 'no'</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="55" name="equal_uint8_array">
-			<failure message="Element 2 Expected 3 Was 4" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:55:equal_uint8_array:FAIL: Element 2 Expected 3 Was 4</failure>
+		<testcase name="equal_uint8_array" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="55">
+			<failure type="failure" message="Element 2 Expected 3 Was 4">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:55:equal_uint8_array:FAIL: Element 2 Expected 3 Was 4</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="57" name="float_within">
-			<failure message="Expected 2.1 Was 3" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:57:float_within:FAIL: Expected 2.1 Was 3</failure>
+		<testcase name="float_within" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="57">
+			<failure type="failure" message="Expected 2.1 Was 3">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:57:float_within:FAIL: Expected 2.1 Was 3</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="59" name="basic_fail_message">
-			<failure message="AAAAA++++++" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:59:basic_fail_message:FAIL: AAAAA++++++</failure>
+		<testcase name="basic_fail_message" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="59">
+			<failure type="failure" message="AAAAA++++++">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:59:basic_fail_message:FAIL: AAAAA++++++</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="62" name="boolean_fail_message">
-			<failure message="A message with some spaces" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:62:boolean_fail_message:FAIL: A message with some spaces</failure>
+		<testcase name="boolean_fail_message" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="62">
+			<failure type="failure" message="A message with some spaces">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:62:boolean_fail_message:FAIL: A message with some spaces</failure>
 		</testcase>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="66" name="less_than_int_fail_message">
-			<failure message="Expected 1 to be greater than 2. 1 is not greater than 2, dummy" type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:66:less_than_int_fail_message:FAIL: Expected 1 to be greater than 2. 1 is not greater than 2, dummy</failure>
+		<testcase name="less_than_int_fail_message" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="66">
+			<failure type="failure" message="Expected 1 to be greater than 2. 1 is not greater than 2, dummy">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:66:less_than_int_fail_message:FAIL: Expected 1 to be greater than 2. 1 is not greater than 2, dummy</failure>
 		</testcase>
-		<testcase classname="default" name="pass_with_message"/>
-		<testcase classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="77" name="fail_with_message">
+		<testcase name="pass_with_message" classname="default"/>
+		<testcase name="fail_with_message" classname="default" file="D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c" line="77">
 			<failure type="failure">D:\git\ETCLabs\unity-test-parser\tests\produce_unity_output\normal_unity_test_output.c:77:fail_with_message:FAIL</failure>
 		</testcase>
 	</testsuite>
